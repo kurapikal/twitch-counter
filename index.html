@@ -6,16 +6,32 @@
     <title>Twitch Counter</title>
   </head>
   <body>
-    <main>
-      <div id="container"></div>
-      <div id="totalContainer">Total: HK$0</div>
-      <button id="reset">Reset</button>
-      <button id="clear">Clear</button>
+    <nav>
+      <div class="nav__bar">Twitch Counter</div>
+    </nav>
+
+    <main class="outer__container">
+      <div class="container__width">
+        <div class="container__center__counter">
+          <div id="container"></div>
+          <div class="container__total" id="totalContainer">Total: HK$0</div>
+          <div class="container__reset__clear__btn">
+            <div class="container__reset__btn" id="reset">Reset</div>
+            <div class="container__clear__btn" id="clear">Clear</div>
+          </div>
+        </div>
+
+        <div class="container__center__message">
+          <div class="container__message__content" id="messageContainer"></div>
+        </div>
+      </div>
     </main>
 
-    <main>
-      <div id="messageContainer"></div>
-    </main>
+    <footer>
+      <div class="footer">
+        <div>Copyright © 2024 Twitch Counter All Rights Reserved.</div>
+      </div>
+    </footer>
 
     <script src="bundle.js"></script>
   </body>
